@@ -1,0 +1,215 @@
+@charset "utf-8";
+ * {} body {
+    margin: 0;
+    padding: 0;
+    width: 1024px;
+    height: 768px;
+}
+#panel {
+    position: absolute;
+    top: 0px;
+    /*top: 150px;
+	left: 100px;*/
+    /*opacity: 0;*/
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 99;
+    padding: 0;
+    display: block;
+    /*background-color: blueviolet;*/
+    overflow: hidden;
+}
+.panellst {
+    background-color: #FFFFFF;
+    height: 75px;
+    font-size: 35px;
+    margin: 5px;
+    line-height: 75px;
+}
+.rght {
+    /* text-align: right;*/
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    margin-left: 50px;
+    border: solid 3px #09557f;
+    border-radius: 50%;
+}
+.txt {
+    width: 75px;
+    font-family: sans-serif;
+}
+#sublst {
+    position: absolute;
+    width: 225px;
+    top: 45%;
+  /*  left: 10%;*/
+      left: -225px;
+    font-size: 25px;
+}
+#sublst div {
+    
+    background-color: #FFFFFF;
+    margin: 5px;
+    line-height: 55px;
+    height: 55px;
+    padding-right: 5px;
+}
+#logo {
+    position: absolute;
+    background-image: url('../images/7.png');
+    width: 203px;
+    background-repeat: no-repeat;
+    height: 58px;
+    right: 15px;
+    /* right: -203px;*/
+    bottom: 5px;
+    z-index: 1;
+}
+#title {
+    position: absolute;
+    background-image: url('../images/4.png');
+    width: 301px;
+    background-repeat: no-repeat;
+    height: 182px;
+    /*   top: 5%;*/
+    top: -182px;
+    left: 28.5%;
+    z-index: 1;
+}
+#ball {
+    position: absolute;
+    background-image: url('../images/5.png');
+    width: 387px;
+    background-repeat: no-repeat;
+    height: 504px;
+    right: 0;
+    /* right: -387px;*/
+    bottom: 0;
+    z-index: 0;
+}
+#white {
+    position: absolute;
+    background-image: url('../images/2.png');
+    width: 369px;
+    background-repeat: no-repeat;
+    height: 768px;
+    left: 260px;
+    ;
+    /*top: -768px;*/
+}
+#whiteline {
+    position: absolute;
+    background-image: url('../images/6.png');
+    width: 1024px;
+    background-repeat: no-repeat;
+    height: 70px;
+    bottom: 0;
+    right: 0;
+    /* bottom: -70px;*/
+}
+#panellst {
+    position: absolute;
+    left: 31.5%;
+    top: 35%;
+    /* top:1024px;*/
+    width: 250px;
+}
+#panellst div {
+    position: absolute;
+    top: 1524px;
+    width: 250px;
+}
+#menu {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    right: 0;
+}
+.lay {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 1024px;
+    height: 768px;
+}
+#map {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+}
+#key {
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+    overflow: scroll;
+    background-color: #001dff;
+    max-height: 750px;
+    text-align: center;
+    width: 150px;
+    font-size: 15px;
+}
+#scale {
+    position: absolute;
+    bottom: 10px;
+    z-index: 999;
+    left: 400px;
+}
+.scalevalue {
+    padding: 10px;
+    color: #040450;
+    font-family: cursive;
+}
+#example5 {
+    position: absolute;
+    opacity: 0;
+    padding: 0px;
+    margin: 0px;
+}
+#example5 .sp-thumbnail-image-container {
+    width: 100px;
+    height: 80px;
+    overflow: hidden;
+    float: left;
+}
+#example5 .sp-thumbnail-image {
+    height: 100%;
+}
+#example5 .sp-thumbnail-text {
+    width: 170px;
+    float: right;
+    padding: 8px;
+    background-color: #F0F0F0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#example5 .sp-thumbnail-title {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #333;
+}
+#example5 .sp-thumbnail-description {
+    font-size: 14px;
+    color: #333;
+}
+@media (max-width: 500px) {
+    #example5 .sp-thumbnail {
+        text-align: center;
+    }
+    #example5 .sp-thumbnail-image-container {
+        display: none;
+    }
+    #example5 .sp-thumbnail-text {
+        width: 120px;
+    }
+    #example5 .sp-thumbnail-title {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    #example5 .sp-thumbnail-description {
+        display: none;
+    }
+}

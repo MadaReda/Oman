@@ -9,18 +9,18 @@ $(document).ready(function() {
         }, 1000,
         'easeOutElastic'
     );
-    $("#panellst").children().each(function (i){
+    $("#panellst").children().each(function(i) {
         console.log(this);
-        newpos = $(this).position().top-85 * i-1200;
+        newpos = $(this).position().top - 85 * (5 - i) - 1100;
         console.log(newpos);
-       $(this).delay(700).animate({
-            top:newpos
-        }, 1000,
-        'easeOutElastic'
-    )
-        
+        $(this).delay(1000).animate({
+                top: newpos
+            }, 3000,
+            'easeOutElastic'
+        )
+
     });
-       
+
     /*$("#white").animate({
         top: "0",
     }, {
@@ -109,6 +109,18 @@ $(document).ready(function() {
     //**********************Maps *******************//
     $("#map_btn").click(function() {
         console.log("maps");
+        $(this).css({
+            'background-color': ' #a0d87d'
+        });
+        $("#sublst").animate({
+            left: '10%',
+            duration: 3000,
+            easing: 'easeOutElastic'
+        });
+
+
+       
+
         /*$("#panel").css({
             'opacity': 0,
             'display': 'none'
@@ -345,7 +357,7 @@ $(document).ready(function() {
         console.log(scalevalue);
 
         console.log(scalevalue);
-        $("#scale").append("<span class='scalevalue'> صفر </span> <span class='scalevalue'>" + Math.floor(scalevalue) + "</span> <span class='scalevalue'>" + Math.floor(2 * scalevalue) + "</span> <span class='scalevalue'>" + Math.floor(3 * scalevalue) + "</span> <span class='scalevalue'>" + Math.floor(4 * scalevalue) + "</span>");
+        $("#scale").append("<span class='scalevalue'> 0 </span> <span class='scalevalue'>" + Math.floor(scalevalue) + "</span> <span class='scalevalue'>" + Math.floor(2 * scalevalue) + "</span> <span class='scalevalue'>" + Math.floor(3 * scalevalue) + "</span> <span class='scalevalue'>" + Math.floor(4 * scalevalue) + "</span>");
         //end of adding scale values
     }
     //*************************************************//
