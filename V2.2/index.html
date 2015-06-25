@@ -8,13 +8,13 @@
     <meta name="Author" content="" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.multilevelpushmenu.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery.multilevelpushmenu.css" />-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
     <!--<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>-->
-    <script type="text/javascript" src="js/jquery.multilevelpushmenu.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.multilevelpushmenu.min.js"></script>-->
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 
@@ -22,7 +22,7 @@
     <div id="menu">
 
     </div>
-    <div id="map" style="background-image: url('');width:1024px;height:768px;">
+    <div id="map" style="background-image: url('');width:938px;height:622px;">
     </div>
     <div id="key">
         <img src="" width="25" height="25" id="keybtn" />
@@ -32,11 +32,11 @@
 
     <div id="panel">
 
-        <div id="logo" style=""></div>
+
         <div id="title" style=""></div>
         <div id="ball" style=""></div>
         <div id="white" style=""></div>
-        <div id="whiteline" style=""></div>
+
 
         <div id="panellst">
             <div id="map_btn" class="panellst"><span class="txt">خرائط</span>
@@ -48,7 +48,7 @@
             <div class="panellst"><span class="txt">صور</span>
                 <a class=" fa fa-camera  fa-fw  rght "></a>
             </div>
-            <div class="panellst"><span class="txt">مفاهيم</span>
+            <div id="text_btn" class="panellst"><span class="txt">مفاهيم</span>
                 <a class=" fa fa-lightbulb-o   fa-fw  rght "></a>
             </div>
             <div class="panellst"><span class="txt">دول</span>
@@ -73,7 +73,17 @@
         </div>
 
     </div>
-
+    <div id="logo" style=""></div>
+    <div id="whiteline" style=""></div>
+    <div id="titlesmall" style=""></div>
+    <div id="controls">
+        <i id="hom" class="fa fa-home fa-2x"></i>
+        <i id="txt" class="fa fa-file-text-o fa-2x"></i>
+        <i id="video" class="fa fa-video-camera fa-2x"></i>
+        <i id="album" class="fa fa-picture-o fa-2x"></i>
+        <i id="zoomin" class="fa fa-search-plus fa-2x"></i>
+        <i id="zoomout" class="fa fa-search-minus fa-2x"></i>
+    </div>
 </body>
 
 <script type="text/javascript" src="menu.js"></script>

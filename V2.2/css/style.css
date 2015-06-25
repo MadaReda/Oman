@@ -46,12 +46,11 @@
     position: absolute;
     width: 225px;
     top: 45%;
-  /*  left: 10%;*/
-      left: -225px;
+    /*  left: 10%;*/
+    left: -225px;
     font-size: 25px;
 }
 #sublst div {
-    
     background-color: #FFFFFF;
     margin: 5px;
     line-height: 55px;
@@ -67,7 +66,7 @@
     right: 15px;
     /* right: -203px;*/
     bottom: 5px;
-    z-index: 1;
+    z-index: 100;
 }
 #title {
     position: absolute;
@@ -80,6 +79,31 @@
     left: 28.5%;
     z-index: 1;
 }
+#titlesmall {
+    position: absolute;
+    background-image: url('../images/4.png');
+    background-size: contain;
+    width: 117px;
+    background-repeat: no-repeat;
+    height: 65px;
+    bottom: 5px;
+    left: 5px;
+    z-index: 100;
+}
+#controls {
+    position: absolute;
+    bottom: 5px;
+    background-color: cornflowerblue;
+    z-index: 100;
+    left: 30%;
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+#controls i{
+    margin: 5px;
+}
 #ball {
     position: absolute;
     background-image: url('../images/5.png');
@@ -89,7 +113,6 @@
     right: 0;
     /* right: -387px;*/
     bottom: 0;
-    z-index: 0;
 }
 #white {
     position: absolute;
@@ -109,6 +132,7 @@
     height: 70px;
     bottom: 0;
     right: 0;
+    z-index: 99;
     /* bottom: -70px;*/
 }
 #panellst {
@@ -125,38 +149,68 @@
 }
 #menu {
     position: absolute;
+    overflow: scroll;
     opacity: 0;
     z-index: 1;
     right: 0;
+    top: 2%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 20%;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #09557f;
+}
+#menutitle {
+    background-color: #09557f;
+    color: #ffffff;
 }
 .lay {
     position: absolute;
     padding: 0;
     margin: 0;
-    width: 1024px;
-    height: 768px;
+    /* top: 10%;*/
+    /* width: 938px;
+    height: 622px;*/
+    /*  bottom: 75px;
+    left: 73px;*/
 }
 #map {
     position: absolute;
     opacity: 0;
     z-index: 0;
+    left: 37px;
+    bottom: 75px;
+    border: 5px solid rgb(224, 225, 226);
+    border-radius: 15px;
+    background-color: #c0e8fb;
+    overflow: hidden;
 }
 #key {
     position: absolute;
     opacity: 0;
     z-index: 3;
     overflow: scroll;
-    background-color: #001dff;
-    max-height: 750px;
+    top: 5%;
+    max-height: 95%;
     text-align: center;
-    width: 150px;
     font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 20%;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #09557f;
+}
+#keybtn{
+    position: absolute;
+    top: 45%;
+    left: 83%;
 }
 #scale {
     position: absolute;
-    bottom: 10px;
     z-index: 999;
-    left: 400px;
+    left: 45%;
+    bottom: 10%;
 }
 .scalevalue {
     padding: 10px;
